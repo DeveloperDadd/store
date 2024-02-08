@@ -1,6 +1,7 @@
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from 'next/link';
 import { Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
 
@@ -25,33 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className={playfair.className}>
-      <Image
-        src="/logo.webp"
-        width={200}
-        height={200}
-        alt="Critchfield Family Market Logo"
-      />
-      <nav>
-        <ul>
-          <li>
-            <Link href="#">Shop</Link> {/* Inside here put beef, pork, chicken, grocery, specials, bundles, cart functionality, and checkout 
-            at checkout give the user the option to have the item delivered if within a reasonable distance, if under a certain amount, add a delivery fee  */}
-          </li>
-          <li>
-            <Link href="#">About us</Link> {/* Put the description about how the business started, pictures of the Critchfields and Larry */}
-          </li>
-          <li>
-            <Link href="#">Wholesale</Link> {/* Just put a description here about how to get signed up here for the  */}
-          </li>
-          <li>
-            <Link href="#">Newsletter</Link> {/* Give users a form to fill out to get signed up for weekly email list */}
-          </li>
-        </ul>
-    </nav>
-    <footer>
-      {/* Needs to have an address, telephone number, Link icons to social media accounts, FAQ questions */}
-    </footer>
-    </main>
+    <html lang="en">
+      <body className={playfair.className}>
+      <Navbar />
+      <Footer />
+      </body>
+    </html>
   );
 }
