@@ -5,4 +5,9 @@
 .logo {
     width: auto;
     height: auto;
+    max-width: 450px;
+}
+
+.home-text {
+    font-weight: 800;
 }
