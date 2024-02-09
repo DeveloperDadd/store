@@ -7,7 +7,7 @@ import "./globals.css";
 
 const playfair = Playfair_Display({ 
   subsets: ["latin"],
-  weight: ['400','500','600']
+  weight: ['600']
 });
 
 const montserrat = Montserrat({
@@ -26,10 +26,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={playfair.className}>
-      <Navbar />
+    <html lang="en" className="bg-gradient-to-r from-rose-50 via-white to-red-50">
+      <body>
+      <div className={playfair.className} >
+        <Navbar/>
+      </div>
+      <div className={montserrat.className}>
       { children }
+      </div>
       <Footer />
       </body>
     </html>
