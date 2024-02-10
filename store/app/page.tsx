@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <h1 className="home-text text-6xl py-8 text-center">A Lexington Tradition Since 1969</h1>
+    <h1 className="home-text text-6xl py-8 text-center">A Lexington Tradition Since <span className="text-red-500">1969</span></h1>
     <iframe className="text-center m-auto mt-5" src="https://player.vimeo.com/video/324319542?h=b6006dd76b" width="840" height="460" allow="autoplay; fullscreen; picture-in-picture"></iframe>
 <p><a href="https://vimeo.com/324319542"></a></p>
     <h2 className="home-text text-4xl py-8 text-center">See what our customers have to say!</h2>
